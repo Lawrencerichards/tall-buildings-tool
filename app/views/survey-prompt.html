@@ -1,0 +1,51 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<a href="/admin-view" class="govuk-back-link">Back</a>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-xl">
+        Send survey prompt
+      </span>
+
+      <h2 class="govuk-heading-l">
+        Wycombe House
+      </h2>
+
+      <div class="govuk-inset-text">Use this form to send a tall buildings survey to the relevant contact for this building.
+        The completed survey will then be associated with this property.
+      </div>
+
+
+      <form action="/survey-complete" method="post" class="form">
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper">
+            <label class="govuk-label govuk-label--l" for="registration-number">
+              What is the email of the contact or owner for this property?
+            </label>
+            <span id="account-number-hint" class="govuk-hint">
+              The survey will be sent to this address
+            </span>
+          </h1>
+          <input class="govuk-input govuk-input--width-20" id="registration-number" name="contact-name" value="" type="text">
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Send survey</button>
+
+      </form>
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

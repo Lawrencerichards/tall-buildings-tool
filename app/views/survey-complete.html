@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="/admin-view" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+
+              <div class="govuk-panel govuk-panel--confirmation">
+                <h1 class="govuk-panel__title">
+                  Survey sent
+                </h1>
+                <div class="govuk-panel__body">
+                  We have sent the survey to {{ data['contact-name'] }}
+                </div>
+              </div>
+
+              <p class="govuk-body">We have sent you a confirmation email.</p>
+
+              <h2 class="govuk-heading-m">What happens next</h2>
+
+              <p class="govuk-body">
+                Once the survey has been completed the details will be added to the building details page in the admin view
+              </p>
+
+        </main>
+
+    </div>
+  </div>
+
+{% endblock %}

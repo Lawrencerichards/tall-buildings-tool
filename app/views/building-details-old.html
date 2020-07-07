@@ -1,0 +1,146 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-width-container">
+      <h2 class="govuk-heading-l">
+        Admin view
+      </h2>
+
+
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption"></caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Address</th>
+            <th scope="col" class="govuk-table__header">Date survey sent</th>
+            <th scope="col" class="govuk-table__header">Date survey received</th>
+            <th scope="col" class="govuk-table__header"></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="/building-detail">Wendover house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">20 - 04 - 2020</td>
+            <td class="govuk-table__cell"><button style="visibility: hidden; margin-bottom: 2px;" class="govuk-button" data-module="govuk-button">
+  Send</button></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="/building-detail">Alyesbury house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">28 - 04 - 2020</td>
+            <td class="govuk-table__cell"><button style="visibility: hidden; margin-bottom: 2px;" class="govuk-button" data-module="govuk-button">
+  Send</button></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Wycombe house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">Not yet received</td>
+            <td class="govuk-table__cell"><a href="/survey-prompt"><button style="float: right; margin-bottom: 2px;" class="govuk-button" data-module="govuk-button">
+  Send</button></a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Amersham house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">Not yet received</td>
+            <td class="govuk-table__cell"><button style="float: right; margin-bottom: 2px;" class="govuk-button" data-module="govuk-button">
+  Send</button></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Buckingham house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">Not yet received</td>
+            <td class="govuk-table__cell"><button style="float: right; margin-bottom: 2px;" class="govuk-button" data-module="govuk-button">
+  Send</button></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Tring house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">Not yet received</td>
+            <td class="govuk-table__cell"><button style="float: right; margin-bottom: 2px;" class="govuk-button" data-module="govuk-button">
+  Send</button></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Waddesdon house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">Not yet received</td>
+            <td class="govuk-table__cell"><button style="float: right; margin-bottom: 2px;" class="govuk-button" data-module="govuk-button">
+  Send</button></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Thame house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">Not yet received</td>
+            <td class="govuk-table__cell"><button style="float: right; margin-bottom: 2px;" class="govuk-button" data-module="govuk-button">
+  Send</button></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Whitchurch house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">Not yet received</td>
+            <td class="govuk-table__cell"><button style="float: right; margin-bottom: 2px;" class="govuk-button" data-module="govuk-button">
+  Send</button></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Ludgershall house, Thurlow St, SE17 2UZ</a></th>
+            <td class="govuk-table__cell">06 - 04 - 2020</td>
+            <td class="govuk-table__cell">Not yet received</td>
+            <td class="govuk-table__cell"><a href="#">Send survey</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Add new address
+      </button>
+
+
+      <!-- pagination-->
+      <nav class="moj-pagination" id="pagination-label">
+
+      <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+      <ul class="moj-pagination__list">
+      <li class="moj-pagination__item  moj-pagination__item--prev">
+        <a class="moj-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+      </li>
+
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">1</a></li>
+
+      <li class="moj-pagination__item moj-pagination__item--active">2</li>
+
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">4</a></li>
+
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">5</a></li>
+
+      <li class="moj-pagination__item  moj-pagination__item--next">
+        <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+      </li>
+      </ul>
+      <p class="moj-pagination__results">Showing <b>10</b> to <b>20</b> of <b>1200</b> results</p>
+      </nav>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
