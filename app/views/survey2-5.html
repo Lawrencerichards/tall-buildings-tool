@@ -1,0 +1,94 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="/survey2-4" class="govuk-back-link">Back</a>
+
+<span class="govuk-caption-xl">Question 5</span>
+
+            <form action="/survey2-6" method="post" class="form">
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                          <h1 class="govuk-fieldset__heading">
+                            What insulation is used in combination with this material?
+                          </h1>
+                        </legend>
+                        <div class="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-car" name="insulation" type="radio" value="Mineral wool">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-car">
+                              Mineral wool
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-lorry" name="insulation" type="radio" value="Polyurethane rigid foam (PUR) or Polyisocynanurate foam (PIR)">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-lorry">
+                              Polyurethane rigid foam (PUR) or Polyisocynanurate foam (PIR)
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="insulation" type="radio" value="Phenolic foam insulation">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              Phenolic foam insulation
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="insulation" type="radio" value="Expanded and Extruded polystyrene (EPS/XPS)">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              Expanded and Extruded polystyrene (EPS/XPS)
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="insulation" type="radio" value="Glass wool">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              Glass wool
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="insulation" type="radio" value="Wood fibre">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              Wood fibre
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="insulation" type="radio" value="None">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              None
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="insulation" type="radio" value="Do not know">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              Do not know
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="insulation" type="radio" value="other">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              Other
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+                  </form>
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

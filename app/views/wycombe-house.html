@@ -13,16 +13,16 @@
 
 <span class="govuk-caption-xl">Building details</span>
       <h2 class="govuk-heading-l">
-        Wendover house, Thurlow St, London, SE17 2UZ
+        Wycombe house, Thurlow St, London, SE17 2UZ
       </h2>
 
       <strong class="govuk-tag">
        Over 18m tall
      </strong>
           <br>
-     <br>
-<p><strong>Building height:</strong> 21 metres <br>
-  <strong>Number of stories:</strong> 7</p>
+          <br>
+<p class='govuk-body'><strong>Building height: </strong>{{ data['height-metres'] }}<br>
+  <strong>Number of stories: </strong>{{ data['height-stories'] }}</p>
 
 
 <!-- content below-->
@@ -43,7 +43,7 @@
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Building name</th>
-                  <td class="govuk-table__cell">Wendover House</td>
+                  <td class="govuk-table__cell">Wycombe House</td>
                 </tr>
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Street</th>
@@ -105,37 +105,33 @@
           </div>
           <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
 
-            <h3 class="govuk-heading-m">Number of different external materials on walls</h3>
-            <p class='govuk-body'>5</p>
-
             <h3 class="govuk-heading-m">External materials</h3>
             <p class='govuk-body'>
-              Something x 5
+              {{ data['building-materials'] }}
             </p>
 
             <h3 class="govuk-heading-m">Further details of materials</h3>
             <p class='govuk-body'>
-
+              {{ data['material-explanation'] }}
             </p>
 
             <h3 class="govuk-heading-m">Percentage of external wall covering</h3>
             <p class='govuk-body'>
-
+              {{ data['material-percentage'] }}
             </p>
 
 
             <h3 class="govuk-heading-m">Insulation </h3>
             <p class='govuk-body'>
-
+              {{ data['insulation'] }}
             </p>
 
             <h3 class="govuk-heading-m">Insulation details</h3>
             <p class='govuk-body'>
-
+              {{ data['insulation-detail'] }}
             </p>
 
             <br>
-
           </div>
         </div>
         <div class="govuk-accordion__section ">
@@ -152,6 +148,7 @@
             <p class='govuk-body'>
               {{ data['external-wall-structures'] }}
             </p>
+
 
           </div>
         </div>

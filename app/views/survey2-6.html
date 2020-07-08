@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="/survey2-5" class="govuk-back-link">Back</a>
+
+<span class="govuk-caption-xl">Question 6</span>
+
+            <form action="/survey2-7" method="post" class="form">
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                          <h1 class="govuk-fieldset__heading">
+                            Insulation details
+                          </h1>
+                        </legend>
+
+                        <span id="more-detail-hint" class="govuk-hint">
+                          Please provide any further details you may have about this insulation, such as manufacturer or product name
+
+                        </span>
+
+                        <textarea class="govuk-textarea" id="more-detail" name="insulation-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+
+
+                      </fieldset>
+                    </div>
+
+                    <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+                  </form>
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

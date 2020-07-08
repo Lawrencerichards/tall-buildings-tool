@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="/survey-check" class="govuk-back-link">Back</a>
+
+<span class="govuk-caption-xl">Question 6</span>
+
+<form action="/survey-check" method="post" class="form">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="vehicle-features-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Are there any sizeable external wall strucutres, such as:
+              </h1>
+            </legend>
+            <span id="vehicle-features-hint" class="govuk-hint">
+              Choose one
+            </span>
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="vehicle-features-heated-seats" name="external-wall-structures" type="checkbox" value="Balconies">
+                <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-heated-seats">
+                  Balconies
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="vehicle-features-gps" name="external-wall-structures" type="checkbox" value="Solar shading">
+                <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-gps">
+                  Solar shading
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="external-wall-structures" type="checkbox" value="Green walls">
+                <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                  Green walls
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="external-wall-structures" type="checkbox" value="No external wall structures">
+                <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                  No external wall structures
+                </label>
+                </div>
+
+              <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="external-wall-structures" type="checkbox" value="Other" data-aria-controls="conditional-citizenship-conditional-3">
+                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+                        Other
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-text">
+                          Please specify other structure
+                        </label>
+                        <textarea class="govuk-textarea" id="more-detail" name="external-wall-structures" rows="5" aria-describedby="more-detail-hint"></textarea>
+                      </div>
+                    </div>
+
+            </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -101,10 +101,59 @@
                 </dd>
               </div>
 
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Insulation
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{ data['insulation'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/docs/examples/pass-data/vehicle-type">
+                    Change <span class="govuk-visually-hidden">vehicle type</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Insulation details
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{ data['insulation-detail'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/docs/examples/pass-data/vehicle-type">
+                    Change <span class="govuk-visually-hidden">vehicle type</span>
+                  </a>
+                </dd>
+              </div>
+
+
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  External wall structures
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{ data['external-wall-structures'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/docs/examples/pass-data/vehicle-type">
+                    Change <span class="govuk-visually-hidden">vehicle type</span>
+                  </a>
+                </dd>
+              </div>
+
 
             </dl>
 
-
+            <br>
+            <a href="survey-success">
+            <button class="govuk-button" data-module="govuk-button">
+              Complete survey
+            </button>
+            </a>
 
 
     </div>
