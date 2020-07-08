@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="#" class="govuk-back-link">Back</a>
+
+<span class="govuk-caption-xl">Part 1</span>
+      <h2 class="govuk-heading-l">
+        Building safety survey
+      </h2>
+
+      <p>Page 3 of 6</p>
+      <br>
+            <br>
+
+            <form action="/survey-check" method="post" class="form">
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                          <h1 class="govuk-fieldset__heading">
+                            What percentage of the external wall does this building cover?
+                          </h1>
+                        </legend>
+                        <div class="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-car" name="material-percentage" type="radio" value="0-20%">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-car">
+                              0-20%
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-lorry" name="material-percentage" type="radio" value="21-40%">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-lorry">
+                              21-40%
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="material-percentage" type="radio" value="41-60%">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              41-60%
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="material-percentage" type="radio" value="61-80%">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              61-80%
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="material-percentage" type="radio" value="81-100%">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              81-100%
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="material-percentage" type="radio" value="Do not know">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              Do not know
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+                  </form>
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

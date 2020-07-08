@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="#" class="govuk-back-link">Back</a>
+
+      <h2 class="govuk-heading-l">
+        Check your answers
+      </h2>
+
+
+
+            <dl class="govuk-summary-list">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Is the building over 18m?
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{ data['building-height'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/survey2-1">
+                    Change <span class="govuk-visually-hidden">registration number</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Height of the building in metres
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{ data['height-metres'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/docs/examples/pass-data/vehicle-type">
+                    Change <span class="govuk-visually-hidden">vehicle type</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Height of the building in stories
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{ data['height-stories'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/docs/examples/pass-data/vehicle-type">
+                    Change <span class="govuk-visually-hidden">vehicle type</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Materials used
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{ data['building-materials'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/docs/examples/pass-data/vehicle-type">
+                    Change <span class="govuk-visually-hidden">vehicle type</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Additional material information
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{ data['material-explanation'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/docs/examples/pass-data/vehicle-type">
+                    Change <span class="govuk-visually-hidden">vehicle type</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Percentage materials cover
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  {{ data['material-percentage'] }}
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="/docs/examples/pass-data/vehicle-type">
+                    Change <span class="govuk-visually-hidden">vehicle type</span>
+                  </a>
+                </dd>
+              </div>
+
+
+            </dl>
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

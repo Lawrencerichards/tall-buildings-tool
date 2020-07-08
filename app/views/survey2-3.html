@@ -1,0 +1,143 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="#" class="govuk-back-link">Back</a>
+
+<span class="govuk-caption-xl">Part 1</span>
+      <h2 class="govuk-heading-l">
+        Building safety survey
+      </h2>
+
+      <p>Page 3 of 6</p>
+      <br>
+            <br>
+
+            <form action="/survey2-4" method="post" class="form">
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" aria-describedby="vehicle-features-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                          <h1 class="govuk-fieldset__heading">
+                            Specify external materials used on this building
+                          </h1>
+                        </legend>
+                        <span id="vehicle-features-hint" class="govuk-hint">
+                          Select all that apply
+                        </span>
+                        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-heated-seats" name="building-materials" type="checkbox" value="Glass">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-heated-seats">
+                              Glass
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-gps" name="building-materials" type="checkbox" value="High pressure laminate">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-gps">
+                              High pressure laminate
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Aluminium composite material">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Aluminium composite material
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Other metal composite material">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Other metal composite material
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Metal sheet panels">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Metal sheet panels
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Render system">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Render system
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Brick slips">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Brick slips
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Brick">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Brick
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Stone panels or stone">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Stone panels or stone
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Tiling system">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Tiling system
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Timber or wood">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Timber or wood
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Plastic">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Plastic
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="vehicle-features-radio" name="building-materials" type="checkbox" value="Do not know">
+                            <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-radio">
+                              Do not know
+                            </label>
+                          </div>
+
+                          <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="Other" data-aria-controls="conditional-citizenship-conditional-3">
+                                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+                                    Other
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
+                                  <div class="govuk-form-group">
+                                    <label class="govuk-label" for="contact-by-text">
+                                      Please provide any further details you have for this material(s), such as manufacturer, product name, reaction to fire classification
+                                    </label>
+                                    <textarea class="govuk-textarea" id="more-detail" name="material-explanation" rows="5" aria-describedby="more-detail-hint"></textarea>
+                                  </div>
+                                </div>
+
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+                  </form>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

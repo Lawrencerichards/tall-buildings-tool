@@ -1,0 +1,64 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="#" class="govuk-back-link">Back</a>
+
+<span class="govuk-caption-xl">Part 1</span>
+      <h2 class="govuk-heading-l">
+        Building safety survey
+      </h2>
+
+      <p>Page 1 of 6</p>
+      <br>
+            <br>
+
+            <form action="/survey2-2" method="post" class="form">
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                          <h1 class="govuk-fieldset__heading">
+                            Is the building over 18m tall?
+                          </h1>
+                        </legend>
+                        <div class="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-car" name="building-height" type="radio" value="Yes">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-car">
+                              Yes
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-lorry" name="building-height" type="radio" value="No">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-lorry">
+                              No
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-motorcycle" name="building-height" type="radio" value="Not sure">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-motorcycle">
+                              Not sure
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+                  </form>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

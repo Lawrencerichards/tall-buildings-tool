@@ -1,0 +1,54 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <a href="#" class="govuk-back-link">Back</a>
+
+<span class="govuk-caption-xl">Part 1</span>
+      <h2 class="govuk-heading-l">
+        Building safety survey
+      </h2>
+
+      <p>Page 2 of 6</p>
+      <br>
+            <br>
+
+            <form action="/survey2-3" method="post" class="form">
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper">
+            <label class="govuk-label govuk-label--l" for="registration-number">
+              What is the height of the building
+            </label>
+          </h1>
+          <span id="account-number-hint" class="govuk-hint">
+            In metres
+          </span>
+          <input class="govuk-input govuk-input--width-20" id="registration-number" name="height-metres" value="" type="text">
+
+          <br>
+          <br>
+
+          <span id="account-number-hint" class="govuk-hint">
+            In stories
+          </span>
+          <input class="govuk-input govuk-input--width-20" id="registration-number" name="height-stories" value="" type="text">
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
