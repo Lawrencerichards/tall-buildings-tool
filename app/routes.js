@@ -18,7 +18,7 @@ router.post('/survey-prompt', function (req, res) {
     // this long string is the template ID, copy it from the template
     // page in GOV.UK Notify. It’s not a secret so it’s fine to put it
     // in your code.
-    'f4fb993e-e716-4397-acb6-a1a6f87b381d',
+    'ba5f8102-bc15-4d4f-93a7-fa583d195598',
     // `emailAddress` here needs to match the name of the form field in
     // your HTML page
     req.body.emailAddress
