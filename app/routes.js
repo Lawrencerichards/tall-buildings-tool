@@ -32,4 +32,22 @@ router.post('/survey-prompt', function (req, res) {
 
 
 
+
+// Branching
+router.post('/survey-answer', function (req, res) {
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+
+  let isTallBuilding = req.session.data['building-height']
+
+  if (isTallBuilding === 'no') {
+    res.redirect('/survey-success')
+  } else {
+    res.redirect('/survey2-2')
+  }
+})
+
+
+
 module.exports = router
